@@ -4,7 +4,7 @@
 
 ## Welcome! 👋
 
-This is a solution to the Expenses chart component challenge on Frontend Mentor.
+This is a solution to the <a>https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt</a>
 
 ## The challenge
 
