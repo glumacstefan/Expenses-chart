@@ -8,7 +8,7 @@ This is a solution to the <a href="https://www.frontendmentor.io/challenges/expe
 
 ## The challenge
 
-Your users should be able to:
+Users should be able to:
 
 - View the bar chart and hover over the individual bars to see the correct amounts for each day
 - See the current day's bar highlighted in a different colour to the other bars
