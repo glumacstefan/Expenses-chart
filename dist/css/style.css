@@ -27,7 +27,7 @@ a {
 
 body {
   background-color: hsl(27, 66%, 92%);
-  font-family: "Quicksand", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 .card {
@@ -37,10 +37,12 @@ body {
 
 .card__header {
   background-color: hsl(10, 79%, 65%);
+  border-radius: 10px;
 }
 
 .card__main {
   background-color: hsl(33, 100%, 98%);
+  border-radius: 10px;
 }
 
 .header__title {

@@ -5,8 +5,10 @@
 
 .card__header {
 	background-color: $card-color-secondary;
+	border-radius: 10px;
 }
 
 .card__main {
 	background-color: $card-color-primary;
+	border-radius: 10px;
 }
