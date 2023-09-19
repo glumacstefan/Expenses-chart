@@ -27,6 +27,7 @@ a {
 
 body {
   background-color: hsl(27, 66%, 92%);
+  font-family: "Quicksand", sans-serif;
 }
 
 .card {
