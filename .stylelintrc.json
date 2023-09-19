@@ -1,6 +1,7 @@
 {
   "rules": {
     "indentation": [
+      2,
       "tab",
       {
         "except": ["value"]
