@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \**************************/
 /***/ (() => {
 
-eval("alert(\"hello\");\n\n\n//# sourceURL=webpack://expenses-chart---frontend-mentor/./src/js/script.js?");
+eval("const data = fetch(\"data.json\")\n\t.then(response => response.json())\n\t.then(data => {\n\t\tconsole.log(data);\n\t})\n\t.catch(error => console.log(error));\n\n\n//# sourceURL=webpack://expenses-chart---frontend-mentor/./src/js/script.js?");
 
 /***/ })
 
