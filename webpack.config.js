@@ -59,6 +59,7 @@ module.exports = {
       patterns: [
         { from: 'src/index.html', to: 'index.html' },
         { from: 'src/assets', to: 'assets' },
+        { from: 'src/data.json', to: 'data.json' },
       ],
     }),
     new PrettierPlugin({
