@@ -1,14 +1,87 @@
 .card {
 	margin: 0 auto;
+	transform: translateY(50%);
 	max-width: 450px;
 }
 
 .card__header {
+	display: flex;
+	justify-content: space-between;
 	background-color: $card-color-secondary;
+	color: $card-color-primary;
 	border-radius: 10px;
+	padding: 27px;
+	margin-bottom: 20px;
+}
+
+.card__balance-text {
+	font-size: 14px;
+}
+
+.card__balance--month .card__balance {
+	color: black;
+}
+
+.card__subtitle {
+	margin-bottom: 25px;
+}
+
+.card__body {
+	padding-bottom: 25px;
+	border-bottom: 1px solid $text-color-light;
 }
 
 .card__main {
 	background-color: $card-color-primary;
 	border-radius: 10px;
+	padding: 27px;
+}
+
+.card__footer {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 25px;
+}
+
+.card__stats {
+	text-align: end;
+
+	span {
+		display: block;
+		font-weight: $font-weight-bold;
+	}
+}
+
+.chart__container {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.chart__cell {
+	width: calc(100% / 7);
+	cursor: pointer;
+}
+
+.chart__bar {
+	height: 20px;
+	width: 100%;
+	background-color: $chart-bar;
+	border-radius: 3px;
+
+	&:hover {
+		background-color: $chart-bar-active;
+	}
+}
+
+.chart__label {
+	text-align: center;
+	font-size: 14px;
+}
+
+.footer {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
 }

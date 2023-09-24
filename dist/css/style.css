@@ -27,22 +27,95 @@ a {
 
 body {
   background-color: hsl(27, 66%, 92%);
+  color: hsl(25, 47%, 15%);
+  font-size: 18px;
   font-family: "DM Sans", sans-serif;
 }
 
 .card {
   margin: 0 auto;
+  transform: translateY(50%);
   max-width: 450px;
 }
 
 .card__header {
+  display: flex;
+  justify-content: space-between;
   background-color: hsl(10, 79%, 65%);
+  color: hsl(33, 100%, 98%);
   border-radius: 10px;
+  padding: 27px;
+  margin-bottom: 20px;
+}
+
+.card__balance-text {
+  font-size: 14px;
+}
+
+.card__balance--month .card__balance {
+  color: black;
+}
+
+.card__subtitle {
+  margin-bottom: 25px;
+}
+
+.card__body {
+  padding-bottom: 25px;
+  border-bottom: 1px solid hsl(28, 10%, 53%);
 }
 
 .card__main {
   background-color: hsl(33, 100%, 98%);
   border-radius: 10px;
+  padding: 27px;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+.card__stats {
+  text-align: end;
+}
+.card__stats span {
+  display: block;
+  font-weight: 700;
+}
+
+.chart__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.chart__cell {
+  width: 14.2857142857%;
+  cursor: pointer;
+}
+
+.chart__bar {
+  height: 20px;
+  width: 100%;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 3px;
+}
+.chart__bar:hover {
+  background-color: hsl(186, 34%, 60%);
+}
+
+.chart__label {
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
 }
 
 .header__title {
