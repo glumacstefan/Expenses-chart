@@ -36,6 +36,7 @@ body {
   margin: 0 auto;
   max-width: 450px;
   width: 100%;
+  transform: translateY(25%);
 }
 
 .card__header {
@@ -43,7 +44,7 @@ body {
   justify-content: space-between;
   background-color: hsl(10, 79%, 65%);
   color: hsl(33, 100%, 98%);
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 27px;
   margin-bottom: 20px;
 }
@@ -59,8 +60,8 @@ body {
   font-weight: 700;
 }
 
-.card__balance--month .card__balance {
-  color: black;
+.card__logo {
+  cursor: pointer;
 }
 
 .card__subtitle {
@@ -74,7 +75,7 @@ body {
 
 .card__main {
   background-color: hsl(33, 100%, 98%);
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 27px;
 }
 
@@ -91,11 +92,17 @@ body {
 }
 
 .card__stats {
-  text-align: end;
+  color: hsl(28, 10%, 53%);
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
 }
 .card__stats span {
   display: block;
   font-weight: 700;
+  color: hsl(25, 47%, 15%);
 }
 
 .chart__container {
@@ -155,6 +162,11 @@ body {
   left: 50%;
   transform: translateX(-50%);
   bottom: 0;
+  margin-bottom: 30px;
+}
+
+.footer__attribution a {
+  font-weight: 700;
 }
 
 .header__title {

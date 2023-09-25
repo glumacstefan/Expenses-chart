@@ -2,6 +2,7 @@
 	margin: 0 auto;
 	max-width: 450px;
 	width: 100%;
+	transform: translateY(25%);
 }
 
 .card__header {
@@ -9,7 +10,7 @@
 	justify-content: space-between;
 	background-color: $card-color-secondary;
 	color: $card-color-primary;
-	border-radius: 10px;
+	border-radius: 15px;
 	padding: 27px;
 	margin-bottom: 20px;
 }
@@ -25,8 +26,8 @@
 	font-weight: $font-weight-bold;
 }
 
-.card__balance--month .card__balance {
-	color: black;
+.card__logo {
+	cursor: pointer;
 }
 
 .card__subtitle {
@@ -40,7 +41,7 @@
 
 .card__main {
 	background-color: $card-color-primary;
-	border-radius: 10px;
+	border-radius: 15px;
 	padding: 27px;
 }
 
@@ -59,11 +60,17 @@
 }
 
 .card__stats {
-	text-align: end;
+	color: $text-color-light;
+	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
 
 	span {
 		display: block;
 		font-weight: $font-weight-bold;
+		color: $text-color;
 	}
 }
 
@@ -129,4 +136,11 @@
 	left: 50%;
 	transform: translateX(-50%);
 	bottom: 0;
+	margin-bottom: 30px;
+}
+
+.footer__attribution {
+	a {
+		font-weight: $font-weight-bold;
+	}
 }
