@@ -14,8 +14,15 @@
 	margin-bottom: 20px;
 }
 
-.card__balance-text {
-	font-size: 14px;
+.card__balance-title {
+	font-size: 16px;
+	font-weight: $font-weight-normal;
+}
+
+.card__balance-number {
+	display: block;
+	font-size: 27px;
+	font-weight: $font-weight-bold;
 }
 
 .card__balance--month .card__balance {
@@ -41,6 +48,14 @@
 	display: flex;
 	justify-content: space-between;
 	padding-top: 25px;
+
+	.card__balance-title {
+		color: $text-color-light;
+	}
+
+	.card__balance-number {
+		font-size: 40px;
+	}
 }
 
 .card__stats {
