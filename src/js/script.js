@@ -15,7 +15,7 @@ data.then(data => {
 		let chartCell = document.createElement("div");
 		chartCell.classList.add("chart__cell");
 		chartCell.innerHTML = `<div class="chart__bar" style="height:${element.amount *
-			2}px"></div><p class="chart__label">${element.day}</p>`;
+			2.5}px"></div><p class="chart__label">${element.day}</p>`;
 		chartContainer.appendChild(chartCell);
 	});
 });
