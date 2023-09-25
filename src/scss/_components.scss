@@ -1,7 +1,7 @@
 .card {
 	margin: 0 auto;
-	transform: translateY(50%);
 	max-width: 450px;
+	width: 100%;
 }
 
 .card__header {
@@ -28,7 +28,7 @@
 
 .card__body {
 	padding-bottom: 25px;
-	border-bottom: 1px solid $text-color-light;
+	border-bottom: 2px solid $page-bg-color;
 }
 
 .card__main {
@@ -55,7 +55,6 @@
 .chart__container {
 	display: flex;
 	justify-content: space-between;
-	gap: 16px;
 }
 
 .chart__cell {
@@ -66,19 +65,48 @@
 	justify-content: flex-end;
 }
 
-.chart__bar {
+.chart__cell-wrapper {
+	margin: 0 7px;
+}
+
+.chart__amount {
+	background-color: $text-color;
+	color: $card-color-primary;
+	font-size: 14px;
 	width: 100%;
+	padding: 5px 0;
+	text-align: center;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	visibility: hidden;
+}
+
+.chart__bar {
 	background-color: $chart-bar;
 	border-radius: 3px;
+	margin-bottom: 5px;
+}
 
-	&:hover {
-		background-color: $chart-bar-active;
+.chart__cell:nth-child(3) {
+	.chart__bar {
+		background-color: $chart-bar-alt;
+	}
+}
+
+.chart__cell:hover {
+	.chart__bar {
+		opacity: 0.5;
+	}
+
+	.chart__amount {
+		visibility: visible;
 	}
 }
 
 .chart__label {
 	text-align: center;
 	font-size: 14px;
+	color: $text-color-light;
 }
 
 .footer {

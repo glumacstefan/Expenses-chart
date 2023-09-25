@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \**************************/
 /***/ (() => {
 
-eval("const data = fetch(\"data.json\")\n\t.then(response => response.json())\n\t.then(data => {\n\t\tconsole.log(data);\n\t\treturn data;\n\t})\n\t.catch(error => console.log(error));\n\nlet chartContainer = document.querySelector(\".js-chart__container\");\n\ndata.then(data => {\n\tdata.forEach(element => {\n\t\tconsole.log(element);\n\n\t\tlet chartCell = document.createElement(\"div\");\n\t\tchartCell.classList.add(\"chart__cell\");\n\t\tchartCell.innerHTML = `<div class=\"chart__bar\" style=\"height:${element.amount *\n\t\t\t2.5}px\"></div><p class=\"chart__label\">${element.day}</p>`;\n\t\tchartContainer.appendChild(chartCell);\n\t});\n});\n\n\n//# sourceURL=webpack://expenses-chart---frontend-mentor/./src/js/script.js?");
+eval("const data = fetch(\"data.json\")\n\t.then(response => response.json())\n\t.then(data => {\n\t\tconsole.log(data);\n\t\treturn data;\n\t})\n\t.catch(error => console.log(error));\n\nlet chartContainer = document.querySelector(\".js-chart__container\");\n\ndata.then(data => {\n\tdata.forEach(element => {\n\t\tconsole.log(element);\n\n\t\tlet chartCell = document.createElement(\"div\");\n\n\t\tchartCell.classList.add(\"chart__cell\");\n\t\tchartCell.innerHTML = `\n\t\t<div class=\"chart__amount\">$${element.amount}</div>\n\t\t\t<div class=\"chart__cell-wrapper\">\n\t\t\t<div class=\"chart__bar\" style=\"height:${element.amount * 2.5}px\">\n\t\t\t</div>\n\t\t\t<p class=\"chart__label\">${element.day}</p></div>`;\n\n\t\tchartContainer.appendChild(chartCell);\n\t});\n});\n\n\n//# sourceURL=webpack://expenses-chart---frontend-mentor/./src/js/script.js?");
 
 /***/ })
 

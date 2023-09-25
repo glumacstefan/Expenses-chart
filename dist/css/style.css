@@ -34,8 +34,8 @@ body {
 
 .card {
   margin: 0 auto;
-  transform: translateY(50%);
   max-width: 450px;
+  width: 100%;
 }
 
 .card__header {
@@ -62,7 +62,7 @@ body {
 
 .card__body {
   padding-bottom: 25px;
-  border-bottom: 1px solid hsl(28, 10%, 53%);
+  border-bottom: 2px solid hsl(27, 66%, 92%);
 }
 
 .card__main {
@@ -88,7 +88,6 @@ body {
 .chart__container {
   display: flex;
   justify-content: space-between;
-  gap: 16px;
 }
 
 .chart__cell {
@@ -99,18 +98,43 @@ body {
   justify-content: flex-end;
 }
 
-.chart__bar {
+.chart__cell-wrapper {
+  margin: 0 7px;
+}
+
+.chart__amount {
+  background-color: hsl(25, 47%, 15%);
+  color: hsl(33, 100%, 98%);
+  font-size: 14px;
   width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  visibility: hidden;
+}
+
+.chart__bar {
   background-color: hsl(10, 79%, 65%);
   border-radius: 3px;
+  margin-bottom: 5px;
 }
-.chart__bar:hover {
+
+.chart__cell:nth-child(3) .chart__bar {
   background-color: hsl(186, 34%, 60%);
+}
+
+.chart__cell:hover .chart__bar {
+  opacity: 0.5;
+}
+.chart__cell:hover .chart__amount {
+  visibility: visible;
 }
 
 .chart__label {
   text-align: center;
   font-size: 14px;
+  color: hsl(28, 10%, 53%);
 }
 
 .footer {
