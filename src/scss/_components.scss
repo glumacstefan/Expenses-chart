@@ -107,6 +107,7 @@
 	background-color: $chart-bar;
 	border-radius: 3px;
 	margin-bottom: 5px;
+	animation: animateChartBar 1s linear;
 }
 
 .chart__cell:nth-child(3) {

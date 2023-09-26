@@ -3,3 +3,14 @@
 @import "components";
 @import "layout";
 @import "icon-font";
+
+@keyframes animateChartBar {
+	0% {
+		transform-origin: bottom;
+		transform: scaleY(0);
+	}
+
+	100% {
+		transform: scaleY(1);
+	}
+}

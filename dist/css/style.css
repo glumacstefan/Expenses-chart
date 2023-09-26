@@ -138,6 +138,7 @@ body {
   background-color: hsl(10, 79%, 65%);
   border-radius: 3px;
   margin-bottom: 5px;
+  animation: animateChartBar 1s linear;
 }
 
 .chart__cell:nth-child(3) .chart__bar {
@@ -171,4 +172,14 @@ body {
 
 .header__title {
   display: none;
+}
+
+@keyframes animateChartBar {
+  0% {
+    transform-origin: bottom;
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }
