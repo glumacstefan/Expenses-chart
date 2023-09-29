@@ -1,3 +1,5 @@
+@import "animations";
+
 .overlayer {
 	background-color: $page-bg-color;
 	position: fixed;
@@ -143,7 +145,8 @@
 	background-color: $chart-bar;
 	border-radius: 3px;
 	margin-bottom: 5px;
-	animation: animateChartBar 1s linear;
+
+	@include animateChartBar;
 }
 
 .chart__cell:nth-child(3) {

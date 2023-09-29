@@ -1,0 +1,14 @@
+@mixin animateChartBar {
+	animation: animateChartBar 1s linear;
+}
+
+@keyframes animateChartBar {
+	0% {
+		transform-origin: bottom;
+		transform: scaleY(0);
+	}
+
+	100% {
+		transform: scaleY(1);
+	}
+}
