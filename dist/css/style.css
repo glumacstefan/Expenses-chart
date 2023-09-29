@@ -32,6 +32,15 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
+@keyframes animateChartBar {
+  0% {
+    transform-origin: bottom;
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
 .overlayer {
   background-color: hsl(27, 66%, 92%);
   position: fixed;
