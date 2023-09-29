@@ -32,11 +32,47 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
+.overlayer {
+  background-color: hsl(27, 66%, 92%);
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader__spinner {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.preloader__item {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.preloader__item--outline {
+  border: 2px solid hsl(33, 100%, 98%);
+  position: relative;
+  right: -15%;
+}
+
+.preloader__item--fill {
+  background-color: hsl(25, 47%, 15%);
+}
+
+.preloader__message {
+  font-size: 20px;
+  text-align: center;
+}
+
 .card {
-  margin: 0 auto;
+  margin: 50px auto;
   max-width: 450px;
   width: 100%;
-  transform: translateY(25%);
 }
 
 .card__header {
@@ -159,11 +195,8 @@ body {
 }
 
 .footer {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 0;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .footer__attribution a {

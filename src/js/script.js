@@ -1,3 +1,9 @@
+const overlayer = document.querySelector(".js-overlayer");
+
+setTimeout(() => {
+	overlayer.style.display = "none";
+}, "2000");
+
 const data = fetch("data.json")
 	.then(response => response.json())
 	.then(data => {
@@ -20,7 +26,8 @@ data.then(data => {
 			<div class="chart__cell-wrapper">
 			<div class="chart__bar" style="height:${element.amount * 2.5}px">
 			</div>
-			<p class="chart__label">${element.day}</p></div>`;
+			<p class="chart__label">${element.day}</p>
+			</div>`;
 
 		chartContainer.appendChild(chartCell);
 	});
