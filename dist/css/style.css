@@ -65,6 +65,16 @@ body {
     opacity: 1;
   }
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .overlayer {
   background-color: hsl(27, 66%, 92%);
   position: fixed;
@@ -126,6 +136,7 @@ body {
   margin: 50px auto;
   max-width: 450px;
   width: 100%;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .card__header {
@@ -291,5 +302,15 @@ body {
   }
   0% {
     opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

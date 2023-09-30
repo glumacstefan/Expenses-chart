@@ -66,6 +66,8 @@
 	margin: 50px auto;
 	max-width: 450px;
 	width: 100%;
+
+	@include fadeIn;
 }
 
 .card__header {
