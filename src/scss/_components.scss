@@ -26,10 +26,15 @@
 	border: 2px solid $card-color-primary;
 	position: relative;
 	right: -15%;
+	z-index: 99;
+
+	@include rotateRight;
 }
 
 .preloader__item--fill {
 	background-color: $text-color;
+
+	@include rotateLeft;
 }
 
 .preloader__message {

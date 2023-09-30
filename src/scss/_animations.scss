@@ -2,6 +2,14 @@
 	animation: animateChartBar 1s linear;
 }
 
+@mixin rotateRight {
+	animation: rotateRight 1.5s linear infinite;
+}
+
+@mixin rotateLeft {
+	animation: rotateLeft 1.5s linear infinite;
+}
+
 @keyframes animateChartBar {
 	0% {
 		transform-origin: bottom;
@@ -10,5 +18,25 @@
 
 	100% {
 		transform: scaleY(1);
+	}
+}
+
+@keyframes rotateRight {
+	50% {
+		transform: translateX(75%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes rotateLeft {
+	50% {
+		transform: translateX(-75%);
+	}
+
+	100% {
+		transform: translateX(0);
 	}
 }

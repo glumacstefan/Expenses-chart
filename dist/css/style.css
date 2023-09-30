@@ -41,6 +41,22 @@ body {
     transform: scaleY(1);
   }
 }
+@keyframes rotateRight {
+  50% {
+    transform: translateX(75%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes rotateLeft {
+  50% {
+    transform: translateX(-75%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .overlayer {
   background-color: hsl(27, 66%, 92%);
   position: fixed;
@@ -67,10 +83,13 @@ body {
   border: 2px solid hsl(33, 100%, 98%);
   position: relative;
   right: -15%;
+  z-index: 99;
+  animation: rotateRight 1.5s linear infinite;
 }
 
 .preloader__item--fill {
   background-color: hsl(25, 47%, 15%);
+  animation: rotateLeft 1.5s linear infinite;
 }
 
 .preloader__message {
@@ -223,5 +242,21 @@ body {
   }
   100% {
     transform: scaleY(1);
+  }
+}
+@keyframes rotateRight {
+  50% {
+    transform: translateX(75%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes rotateLeft {
+  50% {
+    transform: translateX(-75%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
