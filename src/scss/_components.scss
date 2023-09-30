@@ -42,6 +42,26 @@
 	text-align: center;
 }
 
+.preloader__dot {
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: $text-color;
+
+	&:nth-child(1) {
+		@include firstDot;
+	}
+
+	&:nth-child(2) {
+		@include secondDot;
+	}
+
+	&:nth-child(3) {
+		@include thirdDot;
+	}
+}
+
 .card {
 	margin: 50px auto;
 	max-width: 450px;

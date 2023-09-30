@@ -10,6 +10,18 @@
 	animation: rotateLeft 1.5s linear infinite;
 }
 
+@mixin firstDot {
+	animation: dotAnimation 1s linear infinite;
+}
+
+@mixin secondDot {
+	animation: dotAnimation 1s linear 0.2s infinite;
+}
+
+@mixin thirdDot {
+	animation: dotAnimation 1s linear 0.4s infinite;
+}
+
 @keyframes animateChartBar {
 	0% {
 		transform-origin: bottom;
@@ -38,5 +50,15 @@
 
 	100% {
 		transform: translateX(0);
+	}
+}
+
+@keyframes dotAnimation {
+	100% {
+		opacity: 0;
+	}
+
+	0% {
+		opacity: 1;
 	}
 }
