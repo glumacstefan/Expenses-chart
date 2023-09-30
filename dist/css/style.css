@@ -165,7 +165,7 @@ body {
 }
 
 .card__subtitle {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .card__body {
@@ -258,6 +258,10 @@ body {
   color: hsl(28, 10%, 53%);
 }
 
+.header__title {
+  display: none;
+}
+
 .footer {
   margin-bottom: 30px;
   text-align: center;
@@ -265,10 +269,6 @@ body {
 
 .footer__attribution a {
   font-weight: 700;
-}
-
-.header__title {
-  display: none;
 }
 
 @keyframes animateChartBar {

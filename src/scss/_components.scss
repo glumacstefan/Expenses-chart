@@ -96,7 +96,7 @@
 }
 
 .card__subtitle {
-	margin-bottom: 50px;
+	margin-bottom: 25px;
 }
 
 .card__body {
@@ -196,15 +196,4 @@
 	text-align: center;
 	font-size: 14px;
 	color: $text-color-light;
-}
-
-.footer {
-	margin-bottom: 30px;
-	text-align: center;
-}
-
-.footer__attribution {
-	a {
-		font-weight: $font-weight-bold;
-	}
 }
