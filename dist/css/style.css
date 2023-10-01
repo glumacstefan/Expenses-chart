@@ -152,12 +152,18 @@ body {
 .card__balance-title {
   font-size: 16px;
   font-weight: 400;
+  margin-bottom: 5px;
 }
 
 .card__balance-number {
   display: block;
   font-size: 27px;
   font-weight: 700;
+}
+@media screen and (max-width: 375px) {
+  .card__balance-number {
+    font-size: 25px;
+  }
 }
 
 .card__logo {
@@ -178,6 +184,11 @@ body {
   border-radius: 15px;
   padding: 27px;
 }
+@media screen and (max-width: 375px) {
+  .card__main {
+    padding: 18px;
+  }
+}
 
 .card__footer {
   display: flex;
@@ -189,6 +200,11 @@ body {
 }
 .card__footer .card__balance-number {
   font-size: 40px;
+}
+@media screen and (max-width: 375px) {
+  .card__footer .card__balance-number {
+    font-size: 35px;
+  }
 }
 
 .card__stats {
@@ -219,7 +235,12 @@ body {
 }
 
 .chart__cell-wrapper {
-  margin: 0 7px;
+  margin: 0 6px;
+}
+@media screen and (max-width: 375px) {
+  .chart__cell-wrapper {
+    margin: 0 5px;
+  }
 }
 
 .chart__amount {
