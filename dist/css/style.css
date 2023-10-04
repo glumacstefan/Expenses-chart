@@ -213,7 +213,7 @@ body {
 }
 @media screen and (max-width: 375px) {
   .card__footer .card__balance-number {
-    font-size: 35px;
+    font-size: 32px;
   }
 }
 
