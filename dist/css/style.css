@@ -30,7 +30,7 @@ body {
   color: hsl(25, 47%, 15%);
   font-size: 18px;
   font-family: "DM Sans", sans-serif;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 @keyframes animateChartBar {
@@ -148,6 +148,11 @@ body {
   border-radius: 15px;
   padding: 27px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 375px) {
+  .card__header {
+    padding: 18px;
+  }
 }
 
 .card__balance-title {
