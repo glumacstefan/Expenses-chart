@@ -67,7 +67,10 @@
 	margin: 50px auto;
 	max-width: 450px;
 	width: 100%;
+	opacity: 0;
+}
 
+.card--animated {
 	@include fadeIn;
 }
 
@@ -132,7 +135,9 @@
 	display: flex;
 	justify-content: space-between;
 	padding-top: 25px;
+}
 
+.card__balance--footer {
 	.card__balance-title {
 		color: $text-color-light;
 	}

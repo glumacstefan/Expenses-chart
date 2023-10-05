@@ -137,6 +137,10 @@ body {
   margin: 50px auto;
   max-width: 450px;
   width: 100%;
+  opacity: 0;
+}
+
+.card--animated {
   animation: fadeIn 1s ease-in-out;
 }
 
@@ -205,14 +209,15 @@ body {
   justify-content: space-between;
   padding-top: 25px;
 }
-.card__footer .card__balance-title {
+
+.card__balance--footer .card__balance-title {
   color: hsl(28, 10%, 53%);
 }
-.card__footer .card__balance-number {
+.card__balance--footer .card__balance-number {
   font-size: 40px;
 }
 @media screen and (max-width: 375px) {
-  .card__footer .card__balance-number {
+  .card__balance--footer .card__balance-number {
     font-size: 32px;
   }
 }

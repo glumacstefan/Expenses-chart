@@ -14,8 +14,6 @@ window.onload = function() {
 
 	data.then(data => {
 		data.forEach(element => {
-			console.log(element);
-
 			let chartCell = document.createElement("div");
 
 			chartCell.classList.add("chart__cell");
@@ -30,4 +28,13 @@ window.onload = function() {
 			chartContainer.appendChild(chartCell);
 		});
 	});
+
+	setTimeout(triggerFunction, 500);
+
+	function triggerFunction() {
+		let card = document.querySelector(".card");
+		card.classList.add("card--animated");
+
+		card.style.opacity = "1";
+	}
 };
