@@ -32,9 +32,8 @@ window.onload = function() {
 	setTimeout(triggerFunction, 500);
 
 	function triggerFunction() {
-		let card = document.querySelector(".card");
+		let card = document.querySelector(".js-card");
 		card.classList.add("card--animated");
-
 		card.style.opacity = "1";
 	}
 };

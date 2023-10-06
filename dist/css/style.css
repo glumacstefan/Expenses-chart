@@ -141,7 +141,7 @@ body {
 }
 
 .card--animated {
-  animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 1s ease-in-out 0s forwards;
 }
 
 .card__header {
@@ -303,6 +303,10 @@ body {
   text-align: center;
 }
 
+.footer__attribution {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 2s forwards;
+}
 .footer__attribution a {
   font-weight: 700;
 }
