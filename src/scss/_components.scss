@@ -207,12 +207,6 @@
 	@include animateChartBar;
 }
 
-.chart__cell:nth-child(3) {
-	.chart__bar {
-		background-color: $chart-bar-alt;
-	}
-}
-
 .chart__cell:hover {
 	.chart__bar {
 		opacity: 0.5;

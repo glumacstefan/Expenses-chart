@@ -277,10 +277,6 @@ body {
   animation: animateChartBar 1s linear;
 }
 
-.chart__cell:nth-child(3) .chart__bar {
-  background-color: hsl(186, 34%, 60%);
-}
-
 .chart__cell:hover .chart__bar {
   opacity: 0.5;
 }
