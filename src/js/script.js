@@ -36,7 +36,9 @@ window.onload = function() {
 
 			if (largestChartCell) {
 				let chartBar = largestChartCell.querySelector(".chart__bar");
-				chartBar.style.backgroundColor = "hsl(186, 34%, 60%)";
+				chartBar.style.backgroundColor = getComputedStyle(
+					document.documentElement
+				).getPropertyValue("--chart-bar-alt");
 				// TODO: Ubaciti sass varijablu umesto hsl-a
 			}
 		})

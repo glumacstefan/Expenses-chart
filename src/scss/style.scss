@@ -5,3 +5,7 @@
 @import "icon-font";
 @import "animations";
 @import "breakpoints";
+
+:root {
+	--chart-bar-alt: #{$chart-bar-alt};
+}

@@ -350,3 +350,6 @@ body {
     transform: translateY(0);
   }
 }
+:root {
+  --chart-bar-alt: hsl(186, 34%, 60%);
+}
