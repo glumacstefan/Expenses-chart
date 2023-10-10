@@ -176,11 +176,11 @@ body {
   }
 }
 
-.card__logo-wrapper {
+.card__logo {
   display: flex;
 }
 
-.card__logo {
+.card__logo-img {
   cursor: pointer;
 }
 
