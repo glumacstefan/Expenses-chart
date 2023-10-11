@@ -14,16 +14,17 @@ Users should be able to:
 - See the current day's bar highlighted in a different colour to the other bars
 - View the optimal layout for the content depending on their device's screen size
 - See hover states for all interactive elements on the page
-- **Bonus**: See dynamically generated bars based on the data provided in the local JSON file
+- See dynamically generated bars based on the data provided in the local JSON file
 
 ### Built with
 
-- Semantic HTML5 markup
+- HTML5 markup
 - SASS
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
+  - Instead of a regular 7-1 Scss structure (7 folders - 1 main file), in this project i went with a different, more improvised approach in order to avoid unnecessary files because of the size of the project
 - Javascript
+- Webpack bundler
+- Desktop first design
+  - I intend to go with the Mobile First approach and i usually do, but due the simplicity of the design i decided to do desktop first this time
 
 ### Links
 
