@@ -39,7 +39,6 @@ window.onload = function() {
 				chartBar.style.backgroundColor = getComputedStyle(
 					document.documentElement
 				).getPropertyValue("--chart-bar-alt");
-				// TODO: Ubaciti sass varijablu umesto hsl-a
 			}
 		})
 		.catch(error => console.log(error));
