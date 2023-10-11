@@ -187,6 +187,12 @@ body {
 
 .card__subtitle {
   margin-bottom: 25px;
+  font-size: 27px;
+}
+@media screen and (max-width: 375px) {
+  .card__subtitle {
+    font-size: 22px;
+  }
 }
 
 .card__body {
@@ -269,6 +275,11 @@ body {
   border-radius: 5px;
   margin-bottom: 5px;
   visibility: hidden;
+}
+@media screen and (max-width: 375px) {
+  .chart__amount {
+    font-size: 12px;
+  }
 }
 
 .chart__bar {
