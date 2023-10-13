@@ -34,6 +34,6 @@ Users should be able to:
 
 First install your dependecies
 
-\$ npm install
+npm install
 
-\$ npm run build
+npm run build
